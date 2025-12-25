@@ -1,3 +1,23 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -55,7 +75,7 @@ body {
 }
 
 .hero {
-  height: 80vh;
+  height: 100vh;
   background: red; /* DEBUG */
 }
 
@@ -138,7 +158,7 @@ body {
 .how-cards {
   display: flex;
   justify-content: center;
-  gap: 120px;
+  gap: 400px;
 }
 
 /* Individual Card */
@@ -197,3 +217,321 @@ body {
   text-decoration: underline;
 }
 
+/* ABOUT PAGE */
+.about-page {
+  padding: 60px;
+  background: #f9f9f9;
+}
+
+.about-hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-hero h1 {
+  font-size: 36px;
+  color: #f33f31;
+}
+
+.about-content {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.about-image {
+  width: 45%;
+  border-radius: 10px;
+}
+
+.about-text ul {
+  margin-top: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.about-text li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+/* TEAM */
+.team-section {
+  text-align: center;
+}
+
+.team-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.team-card {
+  background: white;
+  padding: 20px;
+  width: 260px;
+  border-radius: 10px;
+}
+
+.team-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* NAVBAR FIX */
+.navbar {
+  background: #f33f31;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* UL RESET */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+/* LINK RESET */
+.nav-link {
+  text-decoration: none;   /* removes underline */
+  color: white;            /* removes blue */
+  font-size: 16px;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+/* CONTACT PAGE */
+.contact-page {
+  padding: 60px;
+  background: #f9f9f9;
+}
+
+.contact-hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-hero h1 {
+  font-size: 36px;
+  color: #f33f31;
+  margin-bottom: 10px;
+}
+
+.contact-hero p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* CONTACT CARDS */
+.contact-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  background: white;
+  width: 300px;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.contact-card h3 {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.contact-role {
+  color: #f33f31;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.contact-card p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.contact-card a {
+  text-decoration: none;
+  color: #333;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+.contact-form-wrapper {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 30px auto 0;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* FOOTER FIX */
+.footer-section {
+  background: #000;
+  color: #fff;
+  padding: 50px 60px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* REMOVE DEFAULT LINK STYLES */
+.footer-section a {
+  color: #fff;              /* remove blue/purple */
+  text-decoration: none;    /* remove underline */
+  font-size: 14px;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+/* =========================
+   MOBILE RESPONSIVE STYLES
+   ========================= */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  /* HERO */
+  .hero {
+    height: 70vh; /* better for mobile */
+  }
+
+  /* PLANS SECTION */
+  .plans-section {
+    flex-direction: column;
+    gap: 25px;
+    padding: 30px 20px;
+  }
+
+  .plan-card {
+    width: 100%;
+  }
+
+  /* HOW IT WORKS */
+  .how-cards {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  /* ABOUT PAGE */
+  .about-page {
+    padding: 30px 20px;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-image {
+    width: 100%;
+  }
+
+  /* TEAM SECTION */
+  .team-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* CONTACT PAGE */
+  .contact-cards {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  /* FOOTER */
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+/* MOBILE NAV */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #f33f31;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+}
