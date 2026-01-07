@@ -14,7 +14,7 @@ const Footer = () => {
         <div>
           <h4>Follow Us</h4>
           <p>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer">
+            <a href="https://www.instagram.com/yes_eat_2026/?hl=en" target="_blank" rel="noreferrer">
               Instagram
             </a>
           </p>
