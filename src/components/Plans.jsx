@@ -4,7 +4,7 @@ const Plans = () => {
 
       <div className="plan-card">
         <img src="/images/tiffin.png" alt="Tiffin Plan" />
-        <h3>14-Days Tiffin Plan</h3>
+        <h3>15-Days Tiffin Plan</h3>
         <p>Enjoy two meals a day with variety of sabji, rice and daal</p>
         <button className="btn-primary">Show More</button>
       </div>

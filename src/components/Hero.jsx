@@ -2,13 +2,16 @@ const Hero = () => {
   return (
     <section className="hero">
       <video
-        className="hero-video"
-        src="/videos/hero-video.mp4"
-        autoPlay
-        muted
-        loop
-        playsInline
-      />
+  className="hero-video"
+  autoPlay
+  muted
+  loop
+  playsInline
+  preload="metadata"
+  poster="/images/hero-poster.jpg"
+>
+  <source src="/videos/hero-video.mp4" type="video/mp4" />
+</video>
     </section>
   );
 };

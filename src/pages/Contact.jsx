@@ -16,7 +16,6 @@ const Contact = () => {
 
         <div className="contact-card">
           <h3>Chaitanya Thormothe</h3>
-          <p className="contact-role">Founder & CEO</p>
           <p>
             📧 <a href="mailto:chaitanya@yeseat.in">chaitanya@yeseat.in</a>
           </p>
@@ -27,7 +26,6 @@ const Contact = () => {
 
         <div className="contact-card">
           <h3>Aditya Kuwar</h3>
-          <p className="contact-role">Founder & CEO</p>
           <p>
             📧 <a href="mailto:aditya@yeseat.in">aditya@yeseat.in</a>
           </p>
@@ -38,7 +36,6 @@ const Contact = () => {
 
         <div className="contact-card">
           <h3>Ritesh Shevare</h3>
-          <p className="contact-role">Founder & CEO</p>
           <p>
             📧 <a href="mailto:ritesh@yeseat.in">ritesh@yeseat.in</a>
           </p>
